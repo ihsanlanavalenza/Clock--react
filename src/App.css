@@ -1,0 +1,100 @@
+body, html, #root, .ModernApp {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  /* luxury look */
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 500px;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(18, 32, 47, 0.61);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.16);
+  padding: 32px 16px 40px 16px;
+  border: 1.5px solid rgba(255,255,255,.12);
+}
+
+.digital-clock {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-shadow: 0 4px 24px rgba(0,0,0,.25);
+  margin-bottom: 28px;
+  margin-top: 22px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.work-timer-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  background: rgba(255,255,255,.04);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 28px 22px 18px 22px;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.work-timer-panel .timer-label {
+  font-size: 1.15rem;
+  color: #b8d0e6;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.work-timer-time {
+  font-size: 3rem;
+  font-family: 'Poppins', monospace;
+  margin-bottom: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0,0,0,.16);
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.timer-btn {
+  background: linear-gradient(120deg, #38ef7d 0%, #11998e 100%);
+  border: none;
+  color: white;
+  padding: 0.66em 1.6em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  box-shadow: 0 2px 10px rgba(17, 153, 142, 0.15);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.timer-btn:hover {
+  background: linear-gradient(120deg, #00c6ff 0%, #0072ff 100%);
+}
+
+@media (max-width: 650px) {
+  .digital-clock {
+    font-size: 2.6rem;
+  }
+  .work-timer-time {
+    font-size: 1.5rem;
+  }
+  .center-column {
+    max-width: 95vw;
+    padding: 20px 2vw 22px 2vw;
+  }
+}
